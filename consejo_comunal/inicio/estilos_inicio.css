@@ -1,0 +1,96 @@
+section{
+
+	padding: 15px;
+	margin: 5px 100px;
+	border-bottom: 2px groove #0900FF;
+
+}
+
+#fecha{
+	color: black;
+	border: none;
+}
+
+.container__resumen{
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	background: rgb(13, 12, 13, .5);
+
+	border: 1px groove gray;
+
+}
+
+.container__resumen > img{
+	display: inline;
+}
+
+.container__resumen > .info__resumen{
+	color: black;
+	font-size: 15px;
+
+}
+
+
+.container__resumen{
+	display: grid;
+	background: #FF8D14;
+	border: 5px solid gray;
+	padding: 10px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 5px; 
+
+}
+.info__resumen{
+	border-radius: 10px ; 
+	text-align: center;
+	border: none ;
+}
+.titulo__hombres, .titulo__mujeres, .titulo__casas, .titulo__habitantes{
+	background: white;
+}
+
+@media screen and (max-width: 510px){
+	.container__resumen{
+		/* invertimos las filas por columans y las columns por filas */
+		background: red;
+		grid-template-columns:1fr 1fr;
+		grid-template-rows: repeat(4,1fr);
+		grid-row-gap: 10px; 
+
+
+	}
+	.titulo__habitantes{
+		grid-row: 1 / 2;
+	}
+
+	.titulo__hombres{
+		grid-row: 3 / 4;
+	}
+	.titulo__mujeres{
+		grid-row: 4 / 5;
+		
+	}
+	.titulo__casas{
+		grid-row: 2 /3;
+	}
+	.mujeres{
+		background: orange;
+		grid-row: 4 / 5;
+	}
+	.casas{
+		background: orange;
+		grid-row: 2 /3;
+	}
+	.hombres{
+		background: orange;
+		grid-row: 3 / 4;
+	}
+	.habitantes{
+		background: orange;
+		grid-row: 1 / 2;
+
+	}
+
+}
