@@ -1,0 +1,51 @@
+section{
+
+	padding: 15px;
+	margin: 5px 100px;
+	border-bottom: 2px groove #0c9fcc;
+
+}
+
+#fecha{
+	color: black;
+	border: none;
+}
+
+
+.container__resumen{
+	display: grid;
+	border: 5px solid rgb(45, 127, 250);
+	grid-template-columns: repeat(4, auto);
+	grid-template-rows: repeat(3,1fr);
+	grid-gap: 1px;
+	border-radius: 10px;
+
+}
+.title{
+	color: white;
+	font-size: 2rem;
+	grid-column: 1 / 5;
+	background: #444;
+	text-align: center;
+}
+.info__resumen{
+	text-align: center;	
+	background: #cd71af;
+	color: white;
+	font-size: 12pt;
+	font-family: arial;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.row{
+	display: flex;
+	background: white;
+	align-items: center;
+	justify-content: center;
+}
+.row > h5{
+	color: black;
+	font-size: 15pt;
+	font-family: consolas;
+}
